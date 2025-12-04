@@ -22,7 +22,7 @@ class ModeloDiagnostico:
         print("Iniciando pré-processamento...")
         df_proc = self.preparar_dados(df)
         
-        features = ['especie_encoded', 'idade_meses', 'hemoglobina', 'creatinina', 'ureia', 'alt', 'glicose', 'proteinas']
+        features = ['especie_encoded', 'idade_meses', 'hemoglobina', 'hemacias', 'hematocrito', 'leucocitos', 'plaquetas','creatinina', 'ureia', 'alt', 'ast', 'glicose', 'proteinas']
         target = 'diagnostico'
         
         X = df_proc[features]
